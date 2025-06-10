@@ -28,7 +28,7 @@ fetch('products.json')
                         <span class="sale_present">%${percent_disc}</span>
 
                         <div class="img_product">
-                            <a href="#"><img src="${product.img}" alt="" style="hight:300px"></a>
+                            <a href="#"><img src="${product.img}" alt="" style="hight:30px"></a>
                         </div>
 
                         <div class="stars">
