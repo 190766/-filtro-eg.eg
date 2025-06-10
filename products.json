@@ -4,28 +4,28 @@
     "img": "img/product/1.png",
     "name": "filtro 20 inch",
     "price":28 ,
-    "catetory":"boly broblen"
+    "catetory":"electronics"
   },
   {
     "id": 1,
     "img": "img/product/5.png",
     "name": "filtro 10 inch",
     "price": 14,
-    "catetory":"boly broblen"
+    "catetory":"mobiles"
   },
   {
     "id": 2,
     "img": "img/product/2.png",
     "name": "filtro 40 inch",
     "price": 65,
-    "catetory":"boly broblen"
+    "catetory":"electronics"
   },
   {
     "id": 3,
     "img": "img/product/7.png",
     "name": "filtro 30 inch",
     "price": 50,
-    "catetory":"boly broblen"
+    "catetory":"electronics"
   },
   {
     "id": 4,
@@ -39,21 +39,21 @@
     "img": "img/product/9.png",
     "name": "filtro 70 inch",
     "price": 110,
-    "catetory":"boly broblen"
+    "catetory":"mobiles"
   },
   {
     "id": 6,
     "img": "img/product/10.png",
     "name": "filtro jumbo 20 inch",
     "price": 95,
-    "catetory":"boly broblen"
+    "catetory":"electronics"
   },
   {
     "id": 7,
     "img": "img/product/13.png",
     "name": "filtro jumbo 10 inch",
     "price": 370,
-    "catetory":"boly broblen"
+    "catetory":"mobiles"
   }
    
 ]
