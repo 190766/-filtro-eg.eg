@@ -11,7 +11,7 @@
     "img": "img/product/5.png",
     "name": "filtro 10 inch",
     "price": 14,
-    "catetory":"mobiles"
+    "catetory":"electronics"
   },
   {
     "id": 2,
@@ -32,14 +32,14 @@
     "img": "img/product/4.png",
     "name": "filtro 50 inch",
     "price": 90,
-    "catetory":"boly broblen"
+    "catetory":"electronics"
   },
   {
     "id": 5,
     "img": "img/product/9.png",
     "name": "filtro 70 inch",
     "price": 110,
-    "catetory":"mobiles"
+    "catetory":"electronics"
   },
   {
     "id": 6,
@@ -53,7 +53,7 @@
     "img": "img/product/13.png",
     "name": "filtro jumbo 10 inch",
     "price": 370,
-    "catetory":"mobiles"
+    "catetory":"electronics"
   }
    
 ]
