@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILTRO | Online Store</title>
+
+
+    <link rel="icon" href="logo.png">
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+         <!-- File CSS -->
+         <link rel="stylesheet" href="CSS/style.css">
+    </head>
+<body>
+
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>Cart Items : <span class="Count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items_in_cart" id="cart_items">
+
+
+
+        </div>
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>subtotal</p>
+                <p class="price_cart_toral">$0</p>
+            </div>
+
+            <div class="button_cart">
+                <a href="checkout.html" class="btn_cart btn">Checkout</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg btn">Shop More</span>
+            </div>
+        </div>
+
+    </div>
+
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="home.html" class="logo"> <img src="logo.png" alt="" style="width: 100px; height: 100px;" ></a>
+
+                <form action="" class="search_box">
+
+                    <div class="select_box">
+                        <select id="category" name="category">
+
+                           <option value="products">products<option>
+                            <option value="10 inch">10 inch</option>
+                            <option value="20 inch">20 inch</option>
+                            <option value="30 inch">30 inch</option>
+                            <option value="40 inch">40 inch</option>
+                            <option value="50 inch">50 inch</option>
+                            <option value="70 inch">70 inch</option>
+                            <option value="jumbo 10 inch">jumbo 10 inch</option>
+                            <option value="jumbo 20 inch"> jumbo 20 inch </option>
+                        </select>
+                    </div>
+
+                    <input type="text" name="search" id="search" placeholder="Search for Products" required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    
+
+                </form>
+
+                <div class="header_icons">
+                    <!-- <div class="icon">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a> -->
+                    </div>
+
+                    <div onclick="open_close_cart()" class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Products</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+
+
+                      <div class="category_nav_list">
+                            <a href="filtro10inch.html">10 inch</a>
+                            <a href="FILTRO20INCH.HTML">20 inch</a>
+                            <a href="FILTRO30INCH.HTML">30 inch</a>
+                            <a href="FILTRO40ICH.HTML">40 inch</a>
+                            <a href="FILTRO50INCH.HTML">50 inch</a>
+                            <a href="FILTRO70INCH.HTML">70 inch</a>
+                            <a href="FILTROJUM20INCH.HTML">jumbo 20 inch</a>
+                            <a href="FILTROJUM10INCH.HTML">jumbo 10 inch</a>
+                        </div>
+
+
+                    </div>
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="active"><a href="home.html">Home</a></li>
+                       
+                        <li><a href="mailto:filroegypt@gmail.com">Contact</a></li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="login_signup btns">
+                    <a href="LOG.HTML" class="btn">Login  <i class="fa-solid fa-right-to-bracket"></i></a>
+
+                    <a href="index.html" class="btn">Sign UP <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </header>
+
+
+    <section class="checkout">
+        <form id="form_contact" method="post" action="https://script.google.com/macros/s/AKfycbxJgEIAszL-cBrGuC3ikzvRcVwFGtQHgcX8mZ-QKAbV7bR4eHH5azfk03MIx6_-MDVS/exec">
+
+            <input type="hidden" id="items" name="items">
+            <input type="hidden" id="total_Price" name="Total Price">
+            <input type="hidden" id="count_Items" name="Count Items">
+
+            <div class="container">
+                <div class="ordersummary">
+                    <h1>Order Summary</h1>
+
+                    <div class="items" id="checkout_items">
+
+
+
+                    </div>
+
+
+
+                    <div class="bottom_summary">
+                        <div class="shop_table">
+                            <p>Subtotal :</p>
+                            <span class="subtotal_checkout">$325.00</span>
+                        </div>
+
+
+                        <div class="shop_table">
+                            <p>Shipping :</p>
+                            <span class="">50.00 egp</span>
+                        </div>
+
+
+
+                        <div class="shop_table">
+                            <p>total :</p>
+                            <span class="total_checkout">$325.00</span>
+                        </div>
+
+                   <form action="message.html">
+
+                        <div class="btn34">
+                          <a href="message.html" class="btn34" >Place Order</a>
+                        </div>
+                       </form>
+
+
+                    </div>
+                   
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="input_info">
+                  
+                    <div class="address">
+                        <h2>Delivery Address</h2>
+
+                        <div class="inputs">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="Enter your email" name="Email" required>
+
+
+                            <label for="">Name</label>
+                            <input type="text" placeholder="enter your name" name="Name" required>
+
+                            <label for="">Address</label>
+                            <input type="text" placeholder="enter your address" name="Address" required>
+
+                            <label for="">Phone</label>
+                            <input type="number" placeholder="enter your phone" name="Phone" required>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="coupon">
+                        <h2>Coupon Code</h2>
+
+                        <div class="inputs">
+                            <label for="">Coupon code</label>
+                            <input type="text" placeholder="enter your coupon code">
+                        </div>
+
+                        <div class="btn_coupon">
+                            <button>Apply Coupon</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+    
+
+    <footer>
+        <div class="container">
+
+            <div class="big_row">
+                <img class="logo_footer" src="logo.png" alt="" style="width: 100px; height: 100px;">
+
+                <p>helps here</p>
+
+                <div class="icons_footer">
+                    <a href="tel:+20101175195"><i class="fa-solid fa-phone"></i>help</a>
+                    <a href="https://www.facebook.com/filtro.italiano"><i class="fa-brands fa-facebook-f"></i>visit facebook</a>
+                    
+                </div>
+            </div>
+
+          
+ 
+
+
+            <div class="row">
+                <h4>Service us</h4>
+
+                <div class="links">
+                    <a href="tel+201011750195">📞<i class="fa-solid fa-caret-right"></i> Support Center</a>
+                    <a href="mailto:filtroegypt@gmail.com"><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href="https://www.facebook.com/filtro.italiano"><i class="fa-solid fa-caret-right"></i> VISIT IN facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy; <span>FILTRO STORE</span> All Rights Reserved.</p>
+
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                     <P style="color: aliceblue;">FOR instapay</P>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+      <script src="JS/main.js"></script>
+      <script src="JS/submit_checkout.js"></script>
+</body>
+</html>

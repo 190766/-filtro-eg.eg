@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FILTRO | ONLINE STROE </title>
+
+
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+
+
+
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+         <!-- File CSS -->
+         <link rel="stylesheet" href="CSS/style.css">
+         <link rel="stylesheet" href="JS/main.js">
+    </head>
+<body>
+
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>Cart Items : <span class="Count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items_in_cart" id="cart_items">
+
+
+
+        </div>
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>subtotal</p>
+                <p class="price_cart_toral">$0</p>
+            </div>
+
+            <div class="button_cart">
+                <a href="checkout.html" class="btn_cart btn">Checkout</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg btn">Shop More</span>
+            </div>
+        </div>
+
+    </div>
+
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="home.html" class="logo"> <img src="logo.png" alt="" style="width: 100px; height: 100px;"></a>
+
+                <form action="" class="search_box">
+
+                    <div class="select_box">
+                        <select id="category" name="category">
+
+                            <option value="products">products<option>
+                            <option value="10 inch">10 inch</option>
+                            <option value="20 inch">20 inch</option>
+                            <option value="30 inch">30 inch</option>
+                            <option value="40 inch">40 inch</option>
+                            <option value="50 inch">50 inch</option>
+                            <option value="70 inch">70 inch</option>
+                            <option value="jumbo 10 inch">jumbo 10 inch</option>
+                            <option value="jumbo 20 inch"> jumbo 20 inch </option>
+
+                        </select>
+                    </div>
+
+                    <input type="text" name="search" id="search" placeholder="Search for Products" required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    
+
+                </form>
+
+                <div class="header_icons">
+                    <div class="icon">
+                        <!-- <a href=" #">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a> -->
+                    </div>
+                     
+                    <div onclick="open_close_cart()" class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>products</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+
+
+                        <div class="category_nav_list">
+                            <a href="filtro10inch.html">10 inch</a>
+                            <a href="FILTRO20INCH.HTML">20 inch</a>
+                            <a href="FILTRO30INCH.HTML">30 inch</a>
+                            <a href="FILTRO40ICH.HTML">40 inch</a>
+                            <a href="FILTRO50INCH.HTML">50 inch</a>
+                            <a href="FILTRO70INCH.HTML">70 inch</a>
+                            <a href="FILTROJUM20INCH.HTML">jumbo 20 inch</a>
+                            <a href="FILTROJUM10INCH.HTML">jumbo 10 inch</a>
+                        </div>
+
+                    </div>
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="active"><a href="#">Home</a></li>
+                         
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="login_signup btns">
+                    <a href="LOG.HTML" class="btn">Login  <i class="fa-solid fa-right-to-bracket"></i></a>
+
+                    <a href="index.html" class="btn">Sign UP <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </header>
+
+
+    <div class="slider">
+        <div class="container">
+
+
+            <!-- Swiper -->
+            <div class="slide-swp mySwiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/suc 2.jpg" alt="" style="height: 400px;"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/suc1.png" alt="" style="height: 400px;"></a>
+                    </div>
+
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+
+            <div class="banner_2">
+                <a href="#"><img src="img/eidmubra.jpg" alt="" style="height: 400px;"></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="banners_4" id="banner_4">
+        <div class="container">
+
+
+            <div class="box">
+                <a href="FILTROJUM20INCH.HTML" class="link_btn"></a>
+
+                <img src="img/pulit.jpg" alt="">
+                <div class="text">
+                    <h5>clen 100%</h5>
+                    <h5>deals on this</h5>
+
+                    <div class="sale">
+               
+                    </div>
+
+                    <h6>Shop Now</h6>
+
+                </div>
+            </div>
+
+
+            
+            <div class="box">
+                <a href="#" class="link_btn"></a>
+
+                <img src="img/girl.webp" alt="">
+                <div class="text">
+                    <h5>this 100% cleaned</h5>
+                    <h5>deals on this</h5>
+                    <div class="sale">
+                      
+                    </div>
+
+                    <h6>Shop Now</h6>
+
+                </div>
+            </div>
+
+
+            
+            <div class="box">
+                <a href="filtro10inch.html" class="link_btn"></a>
+
+                <img src="img/product/0.png" alt="">
+                <div class="text">
+                    <h5>best sales </h5>
+                    <h5>deals on this</h5>
+                    <div class="sale">
+                       
+                    </div>
+
+                    <h6>Shop Now</h6>
+
+                </div>
+            </div>
+
+
+            
+            <div class="box">
+                <a href="FILTRO20INCH.HTML" class="link_btn"></a>
+
+                <img src="img/product/1.png" alt="">
+                <div class="text">
+                    <h5>best sales</h5>
+                    <h5>deals on this</h5>
+                    <div class="sale">
+                       
+    
+                    </div>
+                    <h6>Shop Now</h6>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i> Hot Deals</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="swiper_items_sale">
+
+             
+                   
+
+
+
+                </div>
+                
+
+
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="banners">
+        <div class="container">
+            <div class="banners_boxs banner_2_img">
+                <a href="#" class="box"><img src="img/girl.webp" alt="" style="height: 400px;"></a>
+                <a href="#" class="box"><img src="img/pulit.jpg" alt="" style=" height: 400px;"></a>
+                <a href="#" class="box"><img src="img/baneer.jpg" alt="" style="height: 400px;"></a>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i> products</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="swiper_elctronics">
+
+             
+                   
+
+
+
+                </div>
+                
+
+
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+          
+
+        </div>
+    </div>
+
+
+    <div class="banners">
+        <div class="container">
+            <div class="banners_boxs banner_3_img">
+            
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="slider_products slide">
+
+        <div class="container">
+
+          
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="container">
+
+            <div class="big_row">
+                <img class="logo_footer" src="logo.png" alt=""  style="width: 100px; height: 100px;">
+
+                <p>helps here</p>
+
+                <div class="icons_footer">
+                    <a href="tel:+201011750195"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.facebook.com/filtro.italiano"><i class="fa-brands fa-facebook-f"></i></a>
+                   
+                </div>
+            </div>
+
+            
+
+            
+
+
+            <div class="row">
+                <h4>Service us</h4>
+
+                <div class="links">
+                    <a href="tel:+201011750195">📞<i class="fa-solid fa-caret-right"></i> Support Center</a>
+                      <a href="mailto:filtroegypt@gmial.com"><i class="fa-solid fa-caret-right"></i> Help</a>
+                 </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy; <span>FILTRO STROE</span> All Rights Reserved.</p>
+
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                    <P style="color: aliceblue;">FOR instapay</P>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+       <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- File JS -->
+     
+      <script src="JS/swiper.js"></script>
+      <script src="JS/items_home.js"></script>
+      <script src="JS/main.js"></script>
+</body>
+</html>

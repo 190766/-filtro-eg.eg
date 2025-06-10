@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+:root {
+  --font: 'Lato', sans-serif;
+  --white: #F5F5F5;
+  --light: #0084ff;
+  --tan: #00bfff;
+  --pink: #20dcdc;
+  --rose: #079dfa;
+  --dark: #15bdeb;
+}
+
+/* center container in the middle */
+html {
+  display: grid;
+  min-height: 100%;
+}
+body {
+  display: grid;
+  background: var(--light);
+  font-family: var(--font), sans-serif;
+  text-transform: uppercase;
+}
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 520px;
+  height: 350px;
+  background: var(--white);
+  box-shadow: 5px 5px 15px rgba(0, 161, 248, 0.5); /* $rose in rgba */
+  border-radius: 10px;
+}
+
+p {
+  font-size: 0.6em;
+  color: var(--rose);
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 1.2em;
+  color: var(--dark);
+  margin-top: -5px;
+}
+
+h2 {
+  color: var(--tan);
+  margin-top: -5px;
+}
+
+
+img {
+  width: 290px;
+  margin-top: 47px;
+}
+
+.slideshow-buttons {
+  top: 70%;
+  display: none;
+}
+.one, .two, .three, .four {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--light);
+}
+
+
+.one {
+  left: 22%;
+}
+.two {
+  left: 27%;
+}
+.three {
+  left: 32%;
+}
+.four {
+  left: 37%;
+}
+
+.product {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 10%;
+  left: 60%;
+}
+.desc {
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 17px;
+  color: var(--dark);
+  font-size: .7em;
+  line-height: 1.6em;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+button {
+  background: #0c78dc; /* approximate darken($light, 10%) */
+  padding: 10px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  margin: -1px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--white);
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+button:hover {
+  background: #0e79b4;
+}
+
+
+.add {
+  width: 67%;
+}
+
+.like {
+  width: 22%;
+}
+.sizes {
+  display: grid;
+  color: var(--pink);
+  grid-template-columns: repeat(auto-fill, 30px);
+  width: 60%;
+  grid-gap: 4px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.sizes:hover {
+  cursor: pointer;
+}
+
+
+.pick {
+  margin-top: 11px;
+  margin-bottom:0;
+  margin-left: 20px;
+}
+.size {
+  padding: 9px;
+  border: 1px solid var(--light);
+  font-size: 0.7em;
+  text-align: center;
+  transition: all .4s ease-in-out;
+}
+.size:hover {
+  background: var(--rose);
+  color: var(--white);
+}
+
+.focus{
+  background: var(--rose);
+  color: var(--white);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px;
+}
+footer p {
+  letter-spacing: 3px;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+}
+footer a:hover {
+  color: #7d7d7d;
+} 
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+  transition: color .4s ease-in-out;
+}
+a:hover {
+  color: var(--rose);
+}
+.product:hover .slideshow-buttons {
+  display: block;
+}
+.product:hover img {
+  transform: scale(1.1);
+  transition: all .4s ease-in-out;
+}
+.product:hover .desc {
+  color: var(--rose);
+  transition: all .4s ease-in-out;
+}
+a:hover img {
+  transform: scale(1.1);
+  transition: all .4s ease-in-out;
+}
+a:hover .desc {
+  color: var(--rose);
+  transition: all .4s ease-in-out;
+}
+a{
+  border-radius: solid 2px var(--rose);
+  text-decoration: none;
+}
